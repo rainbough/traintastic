@@ -7,7 +7,7 @@ class Train
   #
   # Returns a new Train.
   
-  def intialize(model, speed)
+  def initialize(model, speed)
   @model = model
   @speed = speed
   end

@@ -7,11 +7,15 @@ class Train
   #
   # Returns a new Train.
   
-  def intialize(model, speed)
+  def initialize(model, speed)
   @model = model
   @speed = speed
   end
 
+
+  def trip_duration(distance)
+     @speed / distance
+  end
   #Returns the String type of power for this train.
   def power_source
     if @model.include?('-A')
@@ -19,6 +23,7 @@ class Train
     else
       'diesel'
     end
+
   end
 end
 
